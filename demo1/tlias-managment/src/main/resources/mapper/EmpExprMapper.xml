@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itheima.mapper.EmpExprMapper">
+
+    <!--
+        void batchInsert(List<EmpExpr> exprList);
+        批量插入sql语法： insert 表名 values(值1,值2,...),(值1,值2,...),...
+        <foreach> 用于循环操作的标签
+        collection="exprList" 设置循环集合对象，为接口映射方法参数名
+        item="expr" 设置变量集合每个元素对象名
+        separator="," 设置循环内容的分隔符
+    -->
+    <insert id="batchInsert">
+        insert emp_expr values
+        <foreach collection="exprList" item="expr" separator=",">
+            (null,#{expr.empId},#{expr.begin},#{expr.end},#{expr.company},#{expr.job})
+        </foreach>
+    </insert>
+
+</mapper>
