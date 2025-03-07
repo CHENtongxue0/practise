@@ -1,0 +1,15 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ŒÀ„¹úÿÿÿÿ8—¶ÁÜÂ2
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Šÿğ”øÿÿÿÿ8ï¶ÁÜÂ2
+H
+java:S1481-"+Remove this unused "result" local variable.(ğ”Ìæ8ı¶ÁÜÂ2
+G	java:S106/"+Replace this use of System.out by a logger.(Ãü–…8ş¶ÁÜÂ2
+F	java:S1061"+Replace this use of System.out by a logger.(™³à8ÿ¶ÁÜÂ2
+F	java:S1062"+Replace this use of System.out by a logger.(’¾æ8ÿ¶ÁÜÂ2
+L	java:S1063"+Replace this use of System.out by a logger.(ª›ğºüÿÿÿÿ8€·ÁÜÂ2
+G	java:S1064"+Replace this use of System.out by a logger.(Ãº‹Ó8·ÁÜÂ2
+L	java:S1066"+Replace this use of System.out by a logger.(Ó³¾üÿÿÿÿ8ƒ·ÁÜÂ2
+G	java:S1069"+Replace this use of System.out by a logger.(¹ÖÄ8„·ÁÜÂ2
+]	java:S125@"<This block of commented-out lines of code should be removed.(ù…Ùüÿÿÿÿ8…·ÁÜÂ2
+X	java:S125A"<This block of commented-out lines of code should be removed.(‡•ì8Å·ÁÜÂ2

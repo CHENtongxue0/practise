@@ -1,0 +1,27 @@
+server:
+  port: 8080 #配置服务器使用的端口号
+
+# 数据库连接池信息
+spring:
+  datasource:
+    druid:
+      username: root
+      password: 123456  # 这个配置为自己的数据库root用户密码
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+  servlet:
+    multipart:
+      max-file-size: 10MB # springboot默认限制单个文件上传大小1mb，这里修改为10mb
+      max-request-size: 100MB # 现在上传多个文件大小限制为100MB
+
+# mybatis配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印执行的sql语句到控制台
+    map-underscore-to-camel-case: true # 开启驼峰命名映射，将数据库字段下划线转换为小驼峰命名进行映射
+  type-aliases-package: com.itheima.pojo # 设置放实体类包名
+  mapper-locations: classpath*:mapper/*.xml # 设置mybatis映射文件存储位置
+
+# yml文件数据格式要求
+# 1.key: value结构 value前面必须至少有一个空格
+# 2.数据有层级关系，相同层级必须对齐，不同层级必须有缩进

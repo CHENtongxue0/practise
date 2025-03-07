@@ -1,0 +1,7 @@
+
+g	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(©Šèşüÿÿÿÿ8“¥äÜÂ2
+k
+java:S2259K"NA "NullPointerException" could be thrown; "originalFilename" is nullable here.(Ô§ëê8Ó¤…ˆÄ2
+j
+java:S2095@"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(…†š8¨¥äÜÂ2
+]	java:S125 "<This block of commented-out lines of code should be removed.(¶¸º¥ùÿÿÿÿ8±¥äÜÂ2

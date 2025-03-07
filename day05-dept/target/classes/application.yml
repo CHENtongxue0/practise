@@ -1,0 +1,21 @@
+server:
+  port: 8080 #配置服务器使用的端口号
+
+# 数据库连接池信息
+spring:
+  datasource:
+    druid:
+      username: root
+      password: 123456  # 这个配置为自己的数据库root用户密码
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+
+# mybatis配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印执行的sql语句到控制台
+    map-underscore-to-camel-case: true # 开启驼峰命名映射
+  type-aliases-package: com.itheima.pojo # 设置放实体类包名
+  Mapper-location: classpath*:mapper/*.xml # 设置mybatis映射文件存储位置
+
+
